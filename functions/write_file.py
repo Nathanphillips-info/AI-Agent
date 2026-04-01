@@ -1,4 +1,27 @@
 import os
+from google import genai
+from google.genai import types
+
+
+schema_write_file = types.FunctionDeclaration(
+    name="write_file",
+    description="Allows AI Agent to write python code to a file within its working directory",
+    parameters=types.Schema(
+        type=types.Type.OBJECT,
+        required=["file_path"],
+        properties={
+            "file_path": types.Schema(
+                type=types.Type.STRING,
+                description="the file path where the agent is allowed to write python files",
+            ),
+            "content": types.Schema(
+                type=types.Type.STRING,
+                description="the content that specifies what the agent should write code to accomplish",    
+            ),
+        },
+    ),
+)
+
 
 
 def write_file(working_directory, file_path, content):
