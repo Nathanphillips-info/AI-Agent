@@ -39,7 +39,7 @@ To maintain safety and prevent unintended behavior:
 
 ## Notes
 
-Parts of the project were guided by Boot.dev instructions, but the majority of the implementation was completed independently. This project helped reinforce both Python fundamentals and foundational AI concepts.
+ This project was guided by Boot.dev instructions, though they do not give you answers, they only describe the tasks that need to be completed. This project helped reinforce both Python fundamentals and AI concepts.
 
 ## Future Improvements
 
